@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: auto;
+}
+table {
+    background-color:gray;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    left: 60px;
+}
+
+.bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2022/08/28/06/01/handball-7415755_1280.jpg');
+    z-index: -1;
+    background-repeat: round;
+    background-size: cover;
+    filter: brightness(50%);
+}
+#logo{
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    padding-left: 30px;
+}
+
